@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
@@ -22,6 +23,13 @@ module.exports = {
         path: './src/assets/images/',
       },
       __key: 'images',
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`montserrat\:400,500`, `cormorant\:400,400i,500,500i`],
+        display: 'swap',
+      },
     },
   ],
 };
