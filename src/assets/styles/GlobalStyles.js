@@ -21,5 +21,14 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     line-height: 1.2;
   }
-  
+
+  ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  }
+
+  a:focus {
+    outline: ${({ theme }) => theme.outline};
+  }
 `;

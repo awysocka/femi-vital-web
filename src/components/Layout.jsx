@@ -7,8 +7,8 @@ import '../assets/styles/normalize.css';
 
 export const Layout = ({ children }) => (
     <>
-      <GlobalStyle />
       <ThemeProvider theme={theme}>
+      <GlobalStyle />
         <main>
           {children}
         </main>

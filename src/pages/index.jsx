@@ -1,7 +1,12 @@
 import * as React from 'react';
+import Navigation from '../components/Navigation/Navigation';
 
 const IndexPage = () => {
-  return <h1>Twoje dobre samopoczucie jest naszym priorytetem.</h1>;
+  return (
+    <>
+      <Navigation />
+    </>
+  );
 };
 
 export default IndexPage;

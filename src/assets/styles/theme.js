@@ -1,4 +1,6 @@
 export const theme = {
+  radius: '4px',
+  outline: '2px solid #7DB4F7',
   color: {
     blue: '#7DB4F7',
     lightBlue: '#D8E9FD',
@@ -8,11 +10,12 @@ export const theme = {
     darkGrey: '#424B4C',
   },
   fontSize: {
-      headingPrimary:'7.2rem',
-      headingSecondary: '5rem',
-      headingTertiary: '2rem',
-      body: '1.6rem',
-      caption: '1.8rem',
+    headingPrimary: '7.2rem',
+    headingSecondary: '5rem',
+    headingTertiary: '2rem',
+    body: '1.6rem',
+    caption: '1.8rem',
+    mobileNav: '2.2rem',
   },
   fontFamily: {
     montserrat: '"Montserrat", sans-serif',
