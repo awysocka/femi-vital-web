@@ -41,10 +41,8 @@ const Navigation = () => {
             <li>
               <Link to='/'>Kontakt</Link>
             </li>
-            <li>
-              <StyledLink href='/'>Umów online</StyledLink>
-            </li>
           </ul>
+          <StyledLink href='/'>Umów online</StyledLink>
         </StyledNavigation>
       </StyledMenu>
     </Wrapper>

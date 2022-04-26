@@ -8,9 +8,14 @@ export const Wrapper = styled.div`
   padding: 20px;
   position: fixed;
   top: 0;
+
+  ${({ theme }) => theme.mq.desktop} {
+    position: static;
+  }
 `;
 
 export const StyledMenu = styled.div`
+  max-width: 1600px;
   width: 100%;
   height: 100vh;
   display: flex;
@@ -24,11 +29,26 @@ export const StyledMenu = styled.div`
   right: -110%;
   transform: ${({ isOpen }) => (isOpen ? 'translateX(-110%)' : 'translateX(0%)')};
   transition: transform 0.3s ease-in-out;
+
+  ${({ theme }) => theme.mq.desktop} {
+    margin: 0 auto;
+    right: 0%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0;
+    height: unset;
+    background-color: transparent;
+    position: static;
+  }
 `;
 
 export const Logo = styled.img`
   width: ${(props) => (props.isSmall ? '120px' : '176px')};
   margin-bottom: auto;
+
+  ${({ theme }) => theme.mq.desktop} {
+    display: ${(props) => (props.isSmall ? 'none' : 'flex')};
+  }
 `;
 
 export const StyledNavigation = styled.nav`
@@ -38,26 +58,52 @@ export const StyledNavigation = styled.nav`
     font-weight: 400;
     line-height: 1.2;
 
+    ${({ theme }) => theme.mq.desktop} {
+      display: flex;
+      align-items: center;
+    }
+
     li {
       margin: 30px 0;
+
+      ${({ theme }) => theme.mq.desktop} {
+        margin: 0;
+        margin-left: 30px;
+      }
 
       a {
         color: ${({ theme }) => theme.color.darkGrey};
         text-decoration: none;
         font-size: ${({ theme }) => theme.fontSize.mobileNav};
+
+        ${({ theme }) => theme.mq.desktop} {
+          font-size: ${({ theme }) => theme.fontSize.body};
+        }
       }
     }
+  }
+
+  ${({ theme }) => theme.mq.desktop} {
+    display: flex;
+    align-items: center;
   }
 `;
 
 export const StyledLink = styled.a`
   color: ${({ theme }) => theme.color.darkBlue};
+  font-family: ${({ theme }) => theme.fontFamily.montserrat};
+  font-size: ${({ theme }) => theme.fontSize.mobileNav};
   background-color: ${({ theme }) => theme.color.lightPink};
   border: 1px solid ${({ theme }) => theme.color.lightPink};
   border-radius: ${({ theme }) => theme.radius};
   padding: 6px 16px;
   line-height: 1.75;
   cursor: pointer;
+
+  ${({ theme }) => theme.mq.desktop} {
+    font-size: ${({ theme }) => theme.fontSize.body};
+    margin-left: 80px;
+  }
 `;
 
 export const StyledBurger = styled.button`
@@ -96,5 +142,9 @@ export const StyledBurger = styled.button`
     :nth-child(3) {
       transform: ${({ isOpen }) => (isOpen ? 'rotate(-45deg)' : 'rotate(0)')};
     }
+  }
+
+  ${({ theme }) => theme.mq.desktop} {
+    display: none;
   }
 `;
