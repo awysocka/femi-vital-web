@@ -8,10 +8,8 @@ export const Wrapper = styled.div`
   padding: 20px;
   position: fixed;
   top: 0;
-
-  ${({ theme }) => theme.mq.desktop} {
-    position: static;
-  }
+  z-index: 1;
+  background-color: ${({ theme }) => theme.color.lightBlue};
 `;
 
 export const StyledMenu = styled.div`

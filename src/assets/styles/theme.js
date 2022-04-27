@@ -11,6 +11,7 @@ export const theme = {
   },
   fontSize: {
     headingPrimary: '7.2rem',
+    headingPrimaryMobile: '4.5rem',
     headingSecondary: '5rem',
     headingTertiary: '2rem',
     body: '1.6rem',
