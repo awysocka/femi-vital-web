@@ -5,7 +5,6 @@ import { Wrapper, RoundBackground, Content, HeroImage } from './Hero.styles';
 const Hero = () => {
   return (
     <Wrapper>
-      <RoundBackground />
       <Content>
         <h1>Twoje dobre samopoczucie jest naszym priorytetem.</h1>
         <p>
@@ -14,6 +13,7 @@ const Hero = () => {
         </p>
         <HeroImage src={heroImg} alt='' />
       </Content>
+      <RoundBackground />
     </Wrapper>
   );
 };
