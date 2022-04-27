@@ -1,6 +1,7 @@
 export const theme = {
   radius: '4px',
   outline: '2px solid #7DB4F7',
+  maxWidth: '1600px',
   color: {
     blue: '#7DB4F7',
     lightBlue: '#D8E9FD',
