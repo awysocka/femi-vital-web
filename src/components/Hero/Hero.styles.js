@@ -9,7 +9,7 @@ export const Wrapper = styled.div`
 `;
 
 export const RoundBackground = styled.div`
-  position: relative;
+  position: absolute;
   min-height: 500px;
   max-height: 800px;
   width: 100%;
@@ -43,9 +43,7 @@ export const RoundBackground = styled.div`
 `;
 
 export const Content = styled.div`
-  position: absolute;
-  top: 100px;
-  padding: 20px;
+  padding: 100px 20px 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;

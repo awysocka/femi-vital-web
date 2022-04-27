@@ -14,6 +14,8 @@ export const theme = {
     headingPrimaryMobile: '4.5rem',
     headingSecondary: '5rem',
     headingTertiary: '2rem',
+    blockquote: '4rem',
+    blockquoteMobile: '2.5rem',
     body: '1.6rem',
     caption: '1.8rem',
     mobileNav: '2.2rem',
