@@ -1,7 +1,7 @@
 export const theme = {
   radius: '4px',
   outline: '2px solid #7DB4F7',
-  maxWidth: '1600px',
+  maxWidth: '1440px',
   color: {
     blue: '#7DB4F7',
     lightBlue: '#D8E9FD',
@@ -14,6 +14,7 @@ export const theme = {
     headingPrimary: '7.2rem',
     headingPrimaryMobile: '4.5rem',
     headingSecondary: '5rem',
+    headingSecondaryMobile: '3.5rem',
     headingTertiary: '2rem',
     blockquote: '4rem',
     blockquoteMobile: '2.5rem',

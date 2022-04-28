@@ -10,10 +10,14 @@ export const Wrapper = styled.div`
   top: 0;
   z-index: 1;
   background-color: ${({ theme }) => theme.color.lightBlue};
+
+  ${({ theme }) => theme.mq.desktop} {
+    padding: 20px 60px;
+  }
 `;
 
 export const StyledMenu = styled.div`
-  max-width: 1600px;
+  max-width: ${({ theme }) => theme.maxWidth};
   width: 100%;
   height: 100vh;
   display: flex;
