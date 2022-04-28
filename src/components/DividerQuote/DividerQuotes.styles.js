@@ -2,14 +2,15 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   max-width: ${({ theme }) => theme.maxWidth};
-  padding: 40px 20px;
+  margin: 0 auto;
+  padding: 40px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
 
   ${({ theme }) => theme.mq.desktop} {
-    padding: 78px 20px;
+    padding: 78px 0px;
   }
 `;
 
