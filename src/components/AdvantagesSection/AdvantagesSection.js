@@ -1,13 +1,13 @@
 import React from 'react';
 import { PageWrapper } from '../../assets/styles/PageStyles.styles';
-import { Wrapper, AdventagesList } from './AdventagesSection.styles';
+import { Wrapper, AdvantagesList } from './AdvantagesSection.styles';
 
-const AdventagesSection = () => {
+const AdvantagesSection = () => {
   return (
     <Wrapper>
       <PageWrapper>
         <h2>Dlaczego szukasz właśnie nas?</h2>
-        <AdventagesList>
+        <AdvantagesList>
           <li>
             <h3>Indywidualne podejście</h3>
             <p>
@@ -29,10 +29,10 @@ const AdventagesSection = () => {
               kontroli nad własnym ciałem.
             </p>
           </li>
-        </AdventagesList>
+        </AdvantagesList>
       </PageWrapper>
     </Wrapper>
   );
 };
 
-export default AdventagesSection;
+export default AdvantagesSection;

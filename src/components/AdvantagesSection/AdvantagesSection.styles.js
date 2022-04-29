@@ -25,7 +25,7 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const AdventagesList = styled.ul`
+export const AdvantagesList = styled.ul`
   font-family: ${({ theme }) => theme.fontFamily.montserrat};
   color: ${({ theme }) => theme.color.darkGrey};
 
