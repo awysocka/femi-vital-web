@@ -3,6 +3,7 @@ import Hero from '../components/Hero/Hero';
 import DividerQuote from '../components/DividerQuote/DividerQuote';
 import AboutUs from '../components/AboutUs/AboutUs';
 import AdvantagesSection from '../components/AdvantagesSection/AdvantagesSection';
+import TeamSection from '../components/TeamSection/TeamSection';
 import { PageWrapper } from '../assets/styles/PageStyles.styles';
 
 const IndexPage = () => {
@@ -14,6 +15,7 @@ const IndexPage = () => {
         <AboutUs />
       </PageWrapper>
       <AdvantagesSection />
+      <TeamSection />
     </>
   );
 };

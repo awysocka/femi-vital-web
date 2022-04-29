@@ -13,7 +13,7 @@ const DividerQuote = () => {
       <Content>
         <Avatar src={avatar} alt='' />
         <Caption>
-          <Caption>Iwona Mazur-Ważny</Caption>
+          <p>Iwona Mazur-Ważny</p>
           <p>Femi-Vital, założycielka</p>
         </Caption>
       </Content>

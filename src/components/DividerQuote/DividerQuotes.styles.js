@@ -78,7 +78,7 @@ export const Caption = styled.div`
     margin: 0;
   }
 
-  :first-child {
+  p:first-child {
     font-size: ${({ theme }) => theme.fontSize.body};
     font-weight: 600;
     line-height: 2;
