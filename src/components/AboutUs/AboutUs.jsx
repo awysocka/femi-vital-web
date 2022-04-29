@@ -20,6 +20,7 @@ const Wrapper = styled.div`
   ${({ theme }) => theme.mq.desktop} {
     grid-gap: 160px;
     grid-template-columns: 1fr 1.2fr;
+    padding: 78px 0px;
   }
 
   h2 {
