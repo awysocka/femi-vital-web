@@ -34,6 +34,7 @@ const Wrapper = styled.div`
 
     ${({ theme }) => theme.mq.desktop} {
       font-size: ${({ theme }) => theme.fontSize.headingSecondary};
+      margin-bottom: 60px;
     }
   }
 
