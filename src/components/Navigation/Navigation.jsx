@@ -15,7 +15,7 @@ const Navigation = () => {
 
   return (
     <Wrapper>
-      <Link tabindex='0'>
+      <Link tabIndex='0' to='/'>
         <Logo isSmall src={logo} alt='Logo. Przejdź do strony głównej' />
       </Link>
       <StyledBurger isOpen={open} onClick={() => setOpen(!open)}>
@@ -24,7 +24,7 @@ const Navigation = () => {
         <div />
       </StyledBurger>
       <StyledMenu isOpen={open}>
-        <Link tabindex='0'>
+        <Link tabIndex='0' to='/'>
           <Logo src={logo} alt='Logo. Przejdź do strony głównej' />
         </Link>
         <StyledNavigation>

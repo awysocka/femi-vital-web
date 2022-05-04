@@ -39,11 +39,14 @@ export const StyledTable = styled.table`
 
     &:last-child {
       font-weight: 500;
-      font-size: ${({ theme }) => theme.fontSize.blockquoteMobile};
     }
 
     ${({ theme }) => theme.mq.tablet} {
       padding: 16px;
+
+      &:last-child {
+        font-size: ${({ theme }) => theme.fontSize.blockquoteMobile};
+      }
     }
 
     ${({ theme }) => theme.mq.desktop} {

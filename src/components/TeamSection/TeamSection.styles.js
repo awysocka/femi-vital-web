@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'gatsby';
@@ -52,7 +53,7 @@ export const TeamList = styled.ul`
   }
 `;
 
-export const StyledLink = styled(Link)`
+export const StyledLink = styled((props) => <Link {...props} />)`
   cursor: pointer;
   font-family: ${({ theme }) => theme.fontFamily.montserrat};
   color: ${({ theme }) => theme.color.darkGrey};
