@@ -8,6 +8,7 @@ import { PageWrapper } from '../assets/styles/PageStyles.styles';
 import DividerContact from '../components/DividerContact/DividerContact';
 import Testimonials from '../components/testimonials/Testimonials';
 import PriceList from '../components/PriceList/PriceList';
+import Contact from '../components/Contact/Contact';
 
 const IndexPage = () => {
   return (
@@ -23,6 +24,7 @@ const IndexPage = () => {
       <Testimonials />
       <PageWrapper>
         <PriceList />
+        <Contact />
       </PageWrapper>
     </>
   );
