@@ -15,7 +15,7 @@ const TeamSection = () => {
             <img src={iwona} alt='' />
             <h3>Iwona Mazur-Ważny</h3>
             <p>Właścicielka, fizjoterapeutka</p>
-            <StyledLink>
+            <StyledLink to='/'>
               więcej <StyledIcon />
             </StyledLink>
           </li>
@@ -23,7 +23,7 @@ const TeamSection = () => {
             <img src={iwona} alt='' />
             <h3>Katarzyna Kaim</h3>
             <p>Fizjoterapeutka</p>
-            <StyledLink>
+            <StyledLink to='/'>
               więcej <StyledIcon />
             </StyledLink>
           </li>
@@ -31,7 +31,7 @@ const TeamSection = () => {
             <img src={dominika} alt='' />
             <h3>Dominika Terka</h3>
             <p>Fizjoterapeutka</p>
-            <StyledLink>
+            <StyledLink to='/'>
               więcej <StyledIcon />
             </StyledLink>
           </li>
@@ -39,7 +39,7 @@ const TeamSection = () => {
             <img src={agata} alt='' />
             <h3>Agata Rozwadowska</h3>
             <p>Fizjoterapeutka</p>
-            <StyledLink>
+            <StyledLink to='/'>
               więcej <StyledIcon />
             </StyledLink>
           </li>
