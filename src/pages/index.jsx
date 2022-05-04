@@ -7,6 +7,7 @@ import TeamSection from '../components/TeamSection/TeamSection';
 import { PageWrapper } from '../assets/styles/PageStyles.styles';
 import DividerContact from '../components/DividerContact/DividerContact';
 import Testimonials from '../components/testimonials/Testimonials';
+import PriceList from '../components/PriceList/PriceList';
 
 const IndexPage = () => {
   return (
@@ -20,6 +21,9 @@ const IndexPage = () => {
       <TeamSection />
       <DividerContact />
       <Testimonials />
+      <PageWrapper>
+        <PriceList />
+      </PageWrapper>
     </>
   );
 };
