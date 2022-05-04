@@ -5,6 +5,7 @@ import AboutUs from '../components/AboutUs/AboutUs';
 import AdvantagesSection from '../components/AdvantagesSection/AdvantagesSection';
 import TeamSection from '../components/TeamSection/TeamSection';
 import { PageWrapper } from '../assets/styles/PageStyles.styles';
+import DividerContact from '../components/DividerContact/DividerContact';
 
 const IndexPage = () => {
   return (
@@ -16,6 +17,7 @@ const IndexPage = () => {
       </PageWrapper>
       <AdvantagesSection />
       <TeamSection />
+      <DividerContact />
     </>
   );
 };
