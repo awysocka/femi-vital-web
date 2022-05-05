@@ -32,7 +32,7 @@ const Contact = () => {
             </IconContainer>
             <div>
               <p>Godziny otwarcia</p>
-              <p>poniedziałek - piątek</p>
+              <p>poniedziałek - piątek:</p>
               <p>09:00 - 19:00</p>
               <p>sobota - niedziela:</p>
               <p>ZAMKNIĘTE</p>
