@@ -9,6 +9,7 @@ import DividerContact from '../components/DividerContact/DividerContact';
 import Testimonials from '../components/testimonials/Testimonials';
 import PriceList from '../components/PriceList/PriceList';
 import Contact from '../components/Contact/Contact';
+import Faq from '../components/Faq/Faq';
 
 const IndexPage = () => {
   return (
@@ -25,6 +26,7 @@ const IndexPage = () => {
       <PageWrapper>
         <PriceList />
         <Contact />
+        <Faq />
       </PageWrapper>
     </>
   );
