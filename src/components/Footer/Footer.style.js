@@ -2,12 +2,13 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   width: 100%;
+  height: 35vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 40px 0 0;
-
+  margin-top: 40px;
+  
   p {
     margin: 0;
   }
@@ -20,9 +21,6 @@ export const RoundBackground = styled.div`
   height: 35vh;
   overflow: hidden;
   z-index: -2;
-  ${({ theme }) => theme.mq.desktop} {
-    height: 40vh;
-  }
 
   &:before {
     content: '';
@@ -43,7 +41,7 @@ export const RoundBackground = styled.div`
 `;
 
 export const Logo = styled.img`
-  width: 230px;
+  width: 200px;
 
   ${({ theme }) => theme.mq.desktop} {
     width: 280px;
@@ -54,8 +52,12 @@ export const SocialMediaContainer = styled.div`
   svg {
     width: 40px;
     height: 40px;
-    margin: 35px 10px 25px;
+    margin: 15px;
     color: ${({ theme }) => theme.color.darkBlue};
+
+    ${({ theme }) => theme.mq.tablet} {
+      margin: 35px 10px 25px;
+  }
   }
 `;
 

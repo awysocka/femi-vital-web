@@ -6,7 +6,7 @@ const DividerQuote = () => {
   return (
     <Wrapper>
       <Quote>
-        W ciągu swej kilkunastoletniej pracy zawodowej pomogłam tysiącom Kobiet w poprawie jakości
+        W ciągu swej kilkunastoletniej pracy zawodowej pomogłam tysiącom Kobiet w&nbsp;poprawie jakości
         urologinekologicznego komfortu życia. Widząc potrzeby Pacjentek stworzyłam miejsce, aby
         każda z nas miała szansę skorzystać z terapii na wysokim poziomie.
       </Quote>
