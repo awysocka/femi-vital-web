@@ -15,6 +15,7 @@ const StyledAccordion = styled(Accordion)`
   ul {
     list-style-type: circle;
     padding-left: 20px;
+    line-height: 1.6;
   }
 `;
 
@@ -90,7 +91,6 @@ const FaqAccordion = () => {
           </StyledAccordionItemButton>
         </AccordionItemHeading>
         <StyledAccordionItemPanel>
-          <p>
             <ul>
               <li>
                 Profilaktycznie - warto sprawdzić, czy wszystko jest ok i dowiedzieć się, co robić,
@@ -109,7 +109,6 @@ const FaqAccordion = () => {
               <li>Jeśli borykasz się z jakimiś dolegliwościami w obrębie dna miednicy</li>
               <li>Jeśli wchodzisz w okres menopauzy</li>
             </ul>
-          </p>
         </StyledAccordionItemPanel>
       </StyledAccordionItem>
       <StyledAccordionItem key='2'>

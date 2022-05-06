@@ -42,7 +42,9 @@ const Navigation = () => {
               <Link to='/'>Kontakt</Link>
             </li>
           </ul>
-          <StyledLink href='/'>Umów online</StyledLink>
+          <StyledLink href='/' target='_blank' rel='noopener noreferrer'>
+            Umów online
+          </StyledLink>
         </StyledNavigation>
       </StyledMenu>
     </Wrapper>
