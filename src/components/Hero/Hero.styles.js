@@ -81,7 +81,7 @@ export const Content = styled.div`
   }
 `;
 
-export const HeroImage = styled.img`
+export const HeroImageContainer = styled.div`
   width: 96%;
   border-radius: ${({ theme }) => theme.radius};
 

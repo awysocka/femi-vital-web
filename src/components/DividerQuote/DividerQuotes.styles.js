@@ -47,7 +47,7 @@ export const Quote = styled.blockquote`
   }
 `;
 
-export const Avatar = styled.img`
+export const AvatarContainer = styled.div`
   width: 54px;
   height: 54px;
   margin-right: 16px;

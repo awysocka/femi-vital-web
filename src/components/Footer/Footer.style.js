@@ -12,6 +12,14 @@ export const Wrapper = styled.div`
   p {
     margin: 0;
   }
+
+  ${({ theme }) => theme.mq.desktop} {
+    height: 33vh;
+  }
+
+  ${({ theme }) => theme.mq.bigDesktop} {
+    height: 30vh;
+  }
 `;
 export const RoundBackground = styled.div`
   position: absolute;
@@ -23,7 +31,11 @@ export const RoundBackground = styled.div`
   z-index: -2;
 
   ${({ theme }) => theme.mq.desktop} {
-    height: 38vh;
+    height: 35vh;
+  }
+
+  ${({ theme }) => theme.mq.bigDesktop} {
+    height: 35vh;
   }
 
   &:before {
@@ -44,11 +56,11 @@ export const RoundBackground = styled.div`
   }
 `;
 
-export const Logo = styled.img`
+export const LogoContainer = styled.div`
   width: 200px;
 
   ${({ theme }) => theme.mq.desktop} {
-    width: 280px;
+    width: 250px;
   }
 `;
 
@@ -56,11 +68,15 @@ export const SocialMediaContainer = styled.div`
   svg {
     width: 40px;
     height: 40px;
-    margin: 15px;
     color: ${({ theme }) => theme.color.darkBlue};
+  }
+
+  a {
+    display: inline-block;
+    margin: 25px 15px 15px;
 
     ${({ theme }) => theme.mq.tablet} {
-      margin: 35px 10px 25px;
+      margin: 35px 10px 15px;
     }
   }
 `;
@@ -79,6 +95,17 @@ export const Content = styled.div`
   p {
     a {
       color: ${({ theme }) => theme.color.darkGrey};
+      margin-left: 5px;
+      padding: 2px 4px;
+      transition: all 0.3s ease;
+
+      ${({ theme }) => theme.mq.hover} {
+        &:hover {
+          background-color: ${({ theme }) => theme.color.hoverPink};
+          border-radius: ${({ theme }) => theme.radius};
+          padding: 2px 4px;
+        }
+      }
     }
   }
 `;

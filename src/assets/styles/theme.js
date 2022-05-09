@@ -1,12 +1,14 @@
 export const theme = {
   radius: '4px',
   outline: '2px solid #7DB4F7',
-  maxWidth: '1440px',
+  maxWidth: '1280px',
   color: {
     blue: '#7DB4F7',
     lightBlue: '#D8E9FD',
     darkBlue: '#092F5D',
+    hoverBlue: '#21436d',
     lightPink: '#F5CCCC',
+    hoverPink: '#f7d6d6',
     lightGrey: '#FBFBFB',
     darkGrey: '#424B4C',
   },
@@ -31,5 +33,6 @@ export const theme = {
     desktop: '@media (min-width: 1024px)',
     bigDesktop: '@media (min-width: 1280px)',
     huge: '@media(min-width: 1440px)',
+    hover: '@media (hover: hover)', 
   },
 };

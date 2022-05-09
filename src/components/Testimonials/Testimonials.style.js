@@ -26,7 +26,7 @@ export const Wrapper = styled.div`
 
 export const TestimonialsList = styled.ul`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   grid-gap: 40px;
 
   li {
