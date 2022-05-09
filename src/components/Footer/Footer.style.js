@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
   align-items: center;
   flex-direction: column;
   margin-top: 40px;
-  
+
   p {
     margin: 0;
   }
@@ -18,9 +18,13 @@ export const RoundBackground = styled.div`
   min-height: 250px;
   max-height: 800px;
   width: 100%;
-  height: 35vh;
+  height: 36vh;
   overflow: hidden;
   z-index: -2;
+
+  ${({ theme }) => theme.mq.desktop} {
+    height: 38vh;
+  }
 
   &:before {
     content: '';
@@ -57,7 +61,7 @@ export const SocialMediaContainer = styled.div`
 
     ${({ theme }) => theme.mq.tablet} {
       margin: 35px 10px 25px;
-  }
+    }
   }
 `;
 
@@ -69,7 +73,7 @@ export const Content = styled.div`
   padding: 20px;
 
   ${({ theme }) => theme.mq.desktop} {
-    padding: 40px;
+    padding: 40px 20px 20px;
   }
 
   p {
