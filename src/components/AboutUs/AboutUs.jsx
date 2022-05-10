@@ -1,58 +1,6 @@
 import * as React from 'react';
-import styled from 'styled-components';
-import logoIcon from '../../assets/images/photo-3-logo-icon.png';
-
-const Wrapper = styled.div`
-  width: 100%;
-  padding: 40px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  ${({ theme }) => theme.mq.tablet} {
-    max-width: ${({ theme }) => theme.maxWidth};
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 20px;
-  }
-
-  ${({ theme }) => theme.mq.desktop} {
-    grid-gap: 160px;
-    grid-template-columns: 1fr 1.2fr;
-    padding: 78px 0px;
-  }
-
-  h2 {
-    margin: 0;
-    margin-bottom: 30px;
-    font-size: ${({ theme }) => theme.fontSize.headingSecondaryMobile};
-    font-family: ${({ theme }) => theme.fontFamily.cormorant};
-    font-style: italic;
-    font-weight: 500;
-    color: ${({ theme }) => theme.color.darkBlue};
-
-    ${({ theme }) => theme.mq.desktop} {
-      font-size: ${({ theme }) => theme.fontSize.headingSecondary};
-      margin-bottom: 60px;
-    }
-  }
-
-  p {
-    font-family: ${({ theme }) => theme.fontFamily.montserrat};
-    color: ${({ theme }) => theme.color.darkGrey};
-    line-height: 1.6;
-  }
-`;
-
-const Icon = styled.img`
-  width: 100%;
-  max-width: 560px;
-
-  ${({ theme }) => theme.mq.tablet} {
-    justify-self: center;
-  }
-`;
+import { StaticImage } from 'gatsby-plugin-image';
+import { Wrapper, ImageContainer } from './AboutUs.style';
 
 const AboutUs = () => {
   return (
@@ -72,7 +20,14 @@ const AboutUs = () => {
           jakości jego działania.
         </p>
       </div>
-      <Icon src={logoIcon} alt='' />
+      <ImageContainer>
+        <StaticImage
+          src='../../assets/images/photo-3-logo-icon.png'
+          alt=''
+          objectFit
+          placeholder='blurred'
+        />
+      </ImageContainer>
     </Wrapper>
   );
 };

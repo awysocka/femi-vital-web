@@ -39,9 +39,6 @@ export const GlobalStyle = createGlobalStyle`
 
   a {
     text-decoration: none;
-  }
-
-  a:focus {
-    outline: ${({ theme }) => theme.outline};
+    transition: all .3s ease;
   }
 `;

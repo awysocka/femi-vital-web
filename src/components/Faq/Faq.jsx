@@ -1,14 +1,21 @@
 import React from 'react';
-import faqPhoto from '../../assets/images/photo-8-faq.jpg';
 import FaqAccordion from '../Accordion/Accordion';
-import { Wrapper, ContentContainer } from './Faq.style';
+import { Wrapper, ContentContainer, ImageContainer } from './Faq.style';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Faq = () => {
   return (
     <Wrapper>
       <h2>Najczęściej zadawane pytania</h2>
       <ContentContainer>
-        <img src={faqPhoto} alt=''></img>
+        <ImageContainer>
+          <StaticImage
+            src='../../assets/images/photo-8-faq.jpg'
+            alt='ręce kobiety trzymające model miednicy'
+            objectFit
+          />
+        </ImageContainer>
+
         <FaqAccordion />
       </ContentContainer>
     </Wrapper>

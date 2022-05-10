@@ -41,7 +41,7 @@ const StyledAccordionItemPanel = styled(AccordionItemPanel)`
   font-family: ${({ theme }) => theme.fontFamily.montserrat};
   font-size: ${({ theme }) => theme.fontSize.body};
   color: ${({ theme }) => theme.color.darkGrey};
-  padding-bottom: 20px;
+  padding: 20px 0;
   animation: ${fadein} 0.35s ease-in;
 
   p {
@@ -50,11 +50,6 @@ const StyledAccordionItemPanel = styled(AccordionItemPanel)`
 `;
 
 const StyledAccordionItemButton = styled(AccordionItemButton)`
-  font-family: ${({ theme }) => theme.fontFamily.montserrat};
-  font-size: ${({ theme }) => theme.fontSize.headingTertiary};
-  color: ${({ theme }) => theme.color.darkGrey};
-  font-weight: 600;
-  line-height: 1.4;
   cursor: pointer;
   padding: 18px 0;
   width: 100%;
@@ -67,6 +62,7 @@ const StyledAccordionItemButton = styled(AccordionItemButton)`
   svg {
     transform: rotate(0deg);
     font-size: ${({ theme }) => theme.fontSize.body};
+    transition: all 0.3s ease;
   }
 
   &[aria-expanded='true'] svg,
@@ -74,9 +70,22 @@ const StyledAccordionItemButton = styled(AccordionItemButton)`
     transform: rotate(-180deg);
   }
 
-  p {
+  h3 {
     margin: 0;
     width: 90%;
+    font-family: ${({ theme }) => theme.fontFamily.montserrat};
+    font-size: ${({ theme }) => theme.fontSize.headingTertiary};
+    color: ${({ theme }) => theme.color.darkGrey};
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  ${({ theme }) => theme.mq.hover} {
+    :hover {
+      svg {
+        color: ${({ theme }) => theme.color.hoverPink};
+      }
+    }
   }
 `;
 
@@ -86,35 +95,34 @@ const FaqAccordion = () => {
       <StyledAccordionItem key='1'>
         <AccordionItemHeading>
           <StyledAccordionItemButton>
-            <p>Kiedy powinnaś udać się na wizytę do fizjoterapeuty uroginekologicznego?</p>
+            <h3>Kiedy powinnaś udać się na wizytę do fizjoterapeuty uroginekologicznego?</h3>
             <FaChevronDown />
           </StyledAccordionItemButton>
         </AccordionItemHeading>
         <StyledAccordionItemPanel>
-            <ul>
-              <li>
-                Profilaktycznie - warto sprawdzić, czy wszystko jest ok i dowiedzieć się, co robić,
-                aby taki stan rzeczy trwał jak najdłużej
-              </li>
-              <li>Jeśli planujesz ciążę, jesteś w ciąży (po skończonym I trymestrze)</li>
-              <li>
-                Już urodziłaś (po porodzie możesz się spokojnie umówić po wizycie połogowej u
-                ginekologa, jeśli jednak zauważasz jakieś niepokojące objawy, zrób to jak
-                najszybciej)
-              </li>
-              <li>
-                Jeśli Twoja ciąża zakończyła się CC i wizyta będzie dotyczyć blizny, zaczekaj, aż
-                szwy będą wyciągnięte, nie będzie strupków itd.
-              </li>
-              <li>Jeśli borykasz się z jakimiś dolegliwościami w obrębie dna miednicy</li>
-              <li>Jeśli wchodzisz w okres menopauzy</li>
-            </ul>
+          <ul>
+            <li>
+              Profilaktycznie - warto sprawdzić, czy wszystko jest ok i dowiedzieć się, co robić,
+              aby taki stan rzeczy trwał jak najdłużej
+            </li>
+            <li>Jeśli planujesz ciążę, jesteś w ciąży (po skończonym I trymestrze)</li>
+            <li>
+              Już urodziłaś (po porodzie możesz się spokojnie umówić po wizycie połogowej u
+              ginekologa, jeśli jednak zauważasz jakieś niepokojące objawy, zrób to jak najszybciej)
+            </li>
+            <li>
+              Jeśli Twoja ciąża zakończyła się CC i wizyta będzie dotyczyć blizny, zaczekaj, aż szwy
+              będą wyciągnięte, nie będzie strupków itd.
+            </li>
+            <li>Jeśli borykasz się z jakimiś dolegliwościami w obrębie dna miednicy</li>
+            <li>Jeśli wchodzisz w okres menopauzy</li>
+          </ul>
         </StyledAccordionItemPanel>
       </StyledAccordionItem>
       <StyledAccordionItem key='2'>
         <AccordionItemHeading>
           <StyledAccordionItemButton>
-            <p>Co powinnam zabrać ze sobą?</p>
+            <h3>Co powinnam zabrać ze sobą?</h3>
             <FaChevronDown />
           </StyledAccordionItemButton>
         </AccordionItemHeading>

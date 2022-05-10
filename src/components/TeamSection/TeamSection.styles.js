@@ -32,6 +32,12 @@ export const TeamList = styled.ul`
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   grid-gap: 40px;
 
+  li {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   img {
     width: 100%;
     max-width: 400px;
@@ -53,12 +59,34 @@ export const TeamList = styled.ul`
   }
 `;
 
-export const StyledLink = styled((props) => <Link {...props} />)`
+export const StyledGatsbyLink = styled((props) => <Link {...props} />)`
   cursor: pointer;
   font-family: ${({ theme }) => theme.fontFamily.montserrat};
   color: ${({ theme }) => theme.color.darkGrey};
   display: flex;
   align-items: center;
+
+  svg {
+    transition: all 0.3s ease-in-out;
+  }
+
+  span {
+    padding: 2px 0;
+    transition: all 0.3s ease;
+  }
+
+  ${({ theme }) => theme.mq.hover} {
+    &:hover {
+      span {
+        background-color: ${({ theme }) => theme.color.hoverPink};
+        border-radius: ${({ theme }) => theme.radius};
+        padding: 2px 4px;
+      }
+      svg {
+        transform: translateX(5px);
+      }
+    }
+  }
 `;
 
 export const StyledIcon = styled(FaArrowRight)`

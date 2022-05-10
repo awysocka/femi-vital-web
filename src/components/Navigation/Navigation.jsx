@@ -1,45 +1,73 @@
 import React, { useState } from 'react';
-import { Link } from 'gatsby';
-import logo from '../../assets/images/femi-vital-logo.png';
+// import { Link } from 'gatsby';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import {
   Wrapper,
   StyledMenu,
-  Logo,
+  LogoContainer,
   StyledNavigation,
   StyledLink,
+  StyledGatsbyLink,
   StyledBurger,
 } from './Navigation.styles';
+import { StaticImage } from 'gatsby-plugin-image';
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
 
   return (
     <Wrapper>
-      <Link tabIndex='0' to='/'>
-        <Logo isSmall src={logo} alt='Logo. Przejdź do strony głównej' />
-      </Link>
-      <StyledBurger isOpen={open} onClick={() => setOpen(!open)}>
+      <AnchorLink tabIndex='0' to='/#hero' onAnchorLinkClick={() => setOpen(false)}>
+        <LogoContainer isSmall>
+          <StaticImage
+            src='../../assets/images/femi-vital-logo.png'
+            alt='Logo. Przejdź do strony głównej'
+            objectFit
+          />
+        </LogoContainer>
+      </AnchorLink>
+      <StyledBurger
+        isOpen={open}
+        onClick={() => setOpen(!open)}
+        alt='Przycisk. Otwórz menu z nawigacją'
+      >
         <div />
         <div />
         <div />
       </StyledBurger>
       <StyledMenu isOpen={open}>
-        <Link tabIndex='0' to='/'>
-          <Logo src={logo} alt='Logo. Przejdź do strony głównej' />
-        </Link>
+        <AnchorLink tabIndex='0' to='/#hero' onAnchorLinkClick={() => setOpen(false)}>
+          <LogoContainer>
+            <StaticImage
+              src='../../assets/images/femi-vital-logo.png'
+              alt='Logo. Przejdź do strony głównej'
+              objectFit
+              loading='eager'
+              placeholder='blurred'
+            />
+          </LogoContainer>
+        </AnchorLink>
         <StyledNavigation>
           <ul>
             <li>
-              <Link to='/'>Oferta</Link>
+              <StyledGatsbyLink to='/#service' onAnchorLinkClick={() => setOpen(false)}>
+                Oferta
+              </StyledGatsbyLink>
             </li>
             <li>
-              <Link to='/'>Zespół</Link>
+              <StyledGatsbyLink to='/#team' onAnchorLinkClick={() => setOpen(false)}>
+                Zespół
+              </StyledGatsbyLink>
             </li>
             <li>
-              <Link to='/'>Cennik</Link>
+              <StyledGatsbyLink to='/#prices' onAnchorLinkClick={() => setOpen(false)}>
+                Cennik
+              </StyledGatsbyLink>
             </li>
             <li>
-              <Link to='/'>Kontakt</Link>
+              <StyledGatsbyLink to='/#contact' onAnchorLinkClick={() => setOpen(false)}>
+                Kontakt
+              </StyledGatsbyLink>
             </li>
           </ul>
           <StyledLink href='/' target='_blank' rel='noopener noreferrer'>

@@ -64,4 +64,13 @@ export const StyledLink = styled.a`
       margin-right: 40px;
     }
   }
+
+  ${({ theme }) => theme.mq.hover} {
+    &:hover {
+      background-color: ${({ isLight, theme }) =>
+        isLight ? theme.color.hoverPink : theme.color.hoverBlue};
+      border: 1px solid
+        ${({ isLight, theme }) => (isLight ? theme.color.hoverPink : theme.color.hoverBlue)};
+    }
+  }
 `;

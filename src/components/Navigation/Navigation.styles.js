@@ -1,4 +1,7 @@
+import React from 'react';
 import styled from 'styled-components';
+// import { Link } from 'gatsby';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -44,7 +47,7 @@ export const StyledMenu = styled.div`
   }
 `;
 
-export const Logo = styled.img`
+export const LogoContainer = styled.div`
   width: ${(props) => (props.isSmall ? '120px' : '176px')};
   margin-bottom: auto;
 
@@ -106,6 +109,25 @@ export const StyledLink = styled.a`
     font-size: ${({ theme }) => theme.fontSize.body};
     margin-left: 80px;
   }
+
+  ${({ theme }) => theme.mq.hover} {
+    &:hover {
+      background-color: ${({ theme }) => theme.color.hoverPink};
+      border: 1px solid ${({ theme }) => theme.color.hoverPink};
+    }
+  }
+`;
+
+export const StyledGatsbyLink = styled((props) => <AnchorLink {...props} />)`
+  padding: 2px 4px;
+  transition: all 0.3s ease;
+
+  ${({ theme }) => theme.mq.hover} {
+    &:hover {
+      background-color: ${({ theme }) => theme.color.hoverPink};
+      border-radius: ${({ theme }) => theme.radius};
+    }
+  }
 `;
 
 export const StyledBurger = styled.button`
@@ -119,10 +141,6 @@ export const StyledBurger = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 10;
-
-  &:focus {
-    outline: ${({ theme }) => theme.outline};
-  }
 
   div {
     width: 36px;
