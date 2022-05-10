@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -117,7 +118,7 @@ export const StyledLink = styled.a`
   }
 `;
 
-export const StyledGatsbyLink = styled((props) => <Link {...props} />)`
+export const StyledGatsbyLink = styled((props) => <AnchorLink {...props} />)`
   padding: 2px 4px;
   transition: all 0.3s ease;
 

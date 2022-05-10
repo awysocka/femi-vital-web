@@ -3,7 +3,7 @@ import { Wrapper, StyledTable } from './PriceList.style';
 
 const PriceList = () => {
   return (
-    <Wrapper>
+    <Wrapper id="prices">
       <h2>Cennik</h2>
       <StyledTable>
         <tbody>

@@ -5,7 +5,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const TeamSection = () => {
   return (
-    <Wrapper>
+    <Wrapper id="team">
       <PageWrapper>
         <h2>Poznaj nasz wspaniały zespół</h2>
         <TeamList>

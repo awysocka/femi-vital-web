@@ -4,7 +4,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const Hero = () => {
   return (
-    <Wrapper>
+    <Wrapper id="hero">
       <Content>
         <h1>Twoje dobre samopoczucie jest naszym priorytetem.</h1>
         <p>

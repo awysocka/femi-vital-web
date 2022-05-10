@@ -76,7 +76,7 @@ const ServiceList = styled.ul`
 
 const Service = () => {
   return (
-    <Wrapper>
+    <Wrapper id="service">
       <h2>W czym możemy Ci pomóc?</h2>
       <ServiceList>
         <li>

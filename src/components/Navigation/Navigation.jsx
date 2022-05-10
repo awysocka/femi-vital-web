@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Link } from 'gatsby';
+// import { Link } from 'gatsby';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import {
   Wrapper,
   StyledMenu,
@@ -16,7 +17,7 @@ const Navigation = () => {
 
   return (
     <Wrapper>
-      <Link to='/'>
+      <AnchorLink tabIndex='0' to='/#hero' onAnchorLinkClick={() => setOpen(false)}>
         <LogoContainer isSmall>
           <StaticImage
             src='../../assets/images/femi-vital-logo.png'
@@ -24,7 +25,7 @@ const Navigation = () => {
             objectFit
           />
         </LogoContainer>
-      </Link>
+      </AnchorLink>
       <StyledBurger
         isOpen={open}
         onClick={() => setOpen(!open)}
@@ -35,7 +36,7 @@ const Navigation = () => {
         <div />
       </StyledBurger>
       <StyledMenu isOpen={open}>
-        <Link tabIndex='0' to='/'>
+        <AnchorLink tabIndex='0' to='/#hero' onAnchorLinkClick={() => setOpen(false)}>
           <LogoContainer>
             <StaticImage
               src='../../assets/images/femi-vital-logo.png'
@@ -45,20 +46,28 @@ const Navigation = () => {
               placeholder='blurred'
             />
           </LogoContainer>
-        </Link>
+        </AnchorLink>
         <StyledNavigation>
           <ul>
             <li>
-              <StyledGatsbyLink to='/'>Oferta</StyledGatsbyLink>
+              <StyledGatsbyLink to='/#service' onAnchorLinkClick={() => setOpen(false)}>
+                Oferta
+              </StyledGatsbyLink>
             </li>
             <li>
-              <StyledGatsbyLink to='/'>Zespół</StyledGatsbyLink>
+              <StyledGatsbyLink to='/#team' onAnchorLinkClick={() => setOpen(false)}>
+                Zespół
+              </StyledGatsbyLink>
             </li>
             <li>
-              <StyledGatsbyLink to='/'>Cennik</StyledGatsbyLink>
+              <StyledGatsbyLink to='/#prices' onAnchorLinkClick={() => setOpen(false)}>
+                Cennik
+              </StyledGatsbyLink>
             </li>
             <li>
-              <StyledGatsbyLink to='/'>Kontakt</StyledGatsbyLink>
+              <StyledGatsbyLink to='/#contact' onAnchorLinkClick={() => setOpen(false)}>
+                Kontakt
+              </StyledGatsbyLink>
             </li>
           </ul>
           <StyledLink href='/' target='_blank' rel='noopener noreferrer'>
