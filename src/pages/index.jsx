@@ -10,7 +10,6 @@ import Testimonials from '../components/testimonials/Testimonials';
 import PriceList from '../components/PriceList/PriceList';
 import Contact from '../components/Contact/Contact';
 import Faq from '../components/Faq/Faq';
-import Footer from '../components/Footer/Footer';
 import Service from '../components/Service/Service';
 
 const IndexPage = () => {
@@ -33,7 +32,6 @@ const IndexPage = () => {
         <Contact />
         <Faq />
       </PageWrapper>
-      <Footer />
     </>
   );
 };

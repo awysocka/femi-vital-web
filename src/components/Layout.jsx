@@ -5,13 +5,24 @@ import { GlobalStyle } from '../assets/styles/GlobalStyles';
 import { theme } from '../assets/styles/theme';
 import '../assets/styles/normalize.css';
 import Navigation from '../components/Navigation/Navigation';
+import Footer from '../components/Footer/Footer';
+import styled from 'styled-components';
+
+const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+`;
 
 export const Layout = ({ children }) => (
   <>
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <Navigation />
-      <main>{children}</main>
+      <Wrapper>
+        <Navigation />
+        <main>{children}</main>
+        <Footer />
+      </Wrapper>
     </ThemeProvider>
   </>
 );

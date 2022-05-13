@@ -11,18 +11,32 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/assets/images/femi-vital-logo.png',
+        icon: 'src/assets/images/favicon.png',
       },
     },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: [`.mdx`, `.md`],
+      },
+    },
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: './src/assets/images/',
+        path: `${__dirname}/src/assets/images/`,
       },
       __key: 'images',
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'team',
+        path: `${__dirname}/src/team/`,
+      },
+      __key: 'team',
     },
     {
       resolve: `gatsby-plugin-google-fonts`,
@@ -36,6 +50,6 @@ module.exports = {
       options: {
         offset: -110
       }
-    }
+    },
   ],
 };

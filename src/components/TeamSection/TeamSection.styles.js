@@ -42,6 +42,8 @@ export const TeamList = styled.ul`
     width: 100%;
     max-width: 400px;
     margin: 0 autu;
+    border-radius: ${({ theme }) => theme.radius};
+    overflow: hidden;
   }
 
   h3 {

@@ -84,6 +84,7 @@ export const Content = styled.div`
 export const HeroImageContainer = styled.div`
   width: 96%;
   border-radius: ${({ theme }) => theme.radius};
+  overflow: hidden;
 
   ${({ theme }) => theme.mq.tablet} {
     width: 66%;

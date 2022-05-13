@@ -13,6 +13,7 @@ const Faq = () => {
             src='../../assets/images/photo-8-faq.jpg'
             alt='ręce kobiety trzymające model miednicy'
             objectFit
+            placeholder='blurred'
           />
         </ImageContainer>
 

@@ -23,6 +23,8 @@ const Navigation = () => {
             src='../../assets/images/femi-vital-logo.png'
             alt='Logo. Przejdź do strony głównej'
             objectFit
+            placeholder='blurred'
+            loading='eager'
           />
         </LogoContainer>
       </AnchorLink>
@@ -30,6 +32,7 @@ const Navigation = () => {
         isOpen={open}
         onClick={() => setOpen(!open)}
         alt='Przycisk. Otwórz menu z nawigacją'
+        aria-label='Otwórz menu z nawigacją'
       >
         <div />
         <div />
@@ -70,7 +73,11 @@ const Navigation = () => {
               </StyledGatsbyLink>
             </li>
           </ul>
-          <StyledLink href='/' target='_blank' rel='noopener noreferrer'>
+          <StyledLink
+            href='https://zarejestrowani.pl/p/QYlK8XPlFXpC0rCryOb93A/?fbclid=IwAR0UTNC85gvBDCbYtuOSBpQf8L70GVr0Zb_lAGz1hZQl4O_-0eNqXLDskDk'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             Umów online
           </StyledLink>
         </StyledNavigation>
