@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   padding: 40px 0;
+  margin-bottom: 40px;
 
   ${({ theme }) => theme.mq.desktop} {
     padding: 78px 0px;

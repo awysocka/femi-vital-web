@@ -5,30 +5,32 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 const TeamSection = () => {
   return (
-    <Wrapper id="team">
+    <Wrapper id='zespol'>
       <PageWrapper>
         <h2>Poznaj nasz wspaniały zespół</h2>
         <TeamList>
           <li>
             <StaticImage
               src='../../assets/images/photo-6-iwona.jpg'
-              alt='zdjęcie twarzy kobiecej'
+              alt='zdjęcie kobiety, Iwona Mazur-Ważny'
+              placeholder='blurred'
             />
             <h3>Iwona Mazur-Ważny</h3>
             <p>Właścicielka, fizjoterapeutka</p>
-            <StyledGatsbyLink to='/'>
+            <StyledGatsbyLink to='/iwona-mazur-wazny'>
               <span>więcej</span>
               <StyledIcon />
             </StyledGatsbyLink>
           </li>
           <li>
             <StaticImage
-              src='../../assets/images/photo-6-iwona.jpg'
-              alt='zdjęcie twarzy kobiecej'
+              src='../../assets/images/photo-7-katarzyna.jpg'
+              alt='zdjęcie kobiety, Katarzyna Kaim'
+              placeholder='blurred'
             />
             <h3>Katarzyna Kaim</h3>
             <p>Fizjoterapeutka</p>
-            <StyledGatsbyLink to='/'>
+            <StyledGatsbyLink to='/katarzyna-kaim'>
               <span>więcej</span>
               <StyledIcon />
             </StyledGatsbyLink>
@@ -36,11 +38,12 @@ const TeamSection = () => {
           <li>
             <StaticImage
               src='../../assets/images/photo-5-dominika.jpg'
-              alt='zdjęcie twarzy kobiecej'
+              alt='zdjęcie kobiety, Dominika Terka'
+              placeholder='blurred'
             />
             <h3>Dominika Terka</h3>
             <p>Fizjoterapeutka</p>
-            <StyledGatsbyLink to='/'>
+            <StyledGatsbyLink to='/dominika-terka'>
               <span>więcej</span>
               <StyledIcon />
             </StyledGatsbyLink>
@@ -48,11 +51,12 @@ const TeamSection = () => {
           <li>
             <StaticImage
               src='../../assets/images/photo-4-agata.jpg'
-              alt='zdjęcie twarzy kobiecej'
+              alt='zdjęcie kobiety, Agata Rozwadowska'
+              placeholder='blurred'
             />
             <h3>Agata Rozwadowska</h3>
             <p>Fizjoterapeutka</p>
-            <StyledGatsbyLink to='/'>
+            <StyledGatsbyLink to='/agata-rozwadowska'>
               <span>więcej</span>
               <StyledIcon />
             </StyledGatsbyLink>

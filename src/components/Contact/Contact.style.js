@@ -85,4 +85,18 @@ export const ContactList = styled.ul`
       line-height: 1.6;
     }
   }
+
+  a {
+    font-family: ${({ theme }) => theme.fontFamily.montserrat};
+    color: ${({ theme }) => theme.color.darkGrey};
+    transition: all 0.3s ease;
+    padding: 2px;
+
+    ${({ theme }) => theme.mq.hover} {
+      &:hover {
+        background-color: ${({ theme }) => theme.color.hoverPink};
+        border-radius: ${({ theme }) => theme.radius};
+      }
+    }
+  }
 `;

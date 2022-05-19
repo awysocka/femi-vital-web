@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Seo from '../components/Seo';
 import Hero from '../components/Hero/Hero';
 import DividerQuote from '../components/DividerQuote/DividerQuote';
 import AboutUs from '../components/AboutUs/AboutUs';
@@ -10,12 +11,12 @@ import Testimonials from '../components/testimonials/Testimonials';
 import PriceList from '../components/PriceList/PriceList';
 import Contact from '../components/Contact/Contact';
 import Faq from '../components/Faq/Faq';
-import Footer from '../components/Footer/Footer';
 import Service from '../components/Service/Service';
 
 const IndexPage = () => {
   return (
     <>
+      <Seo title='Fizjoterapia dla kobiet' />
       <Hero />
       <PageWrapper>
         <DividerQuote />
@@ -33,7 +34,6 @@ const IndexPage = () => {
         <Contact />
         <Faq />
       </PageWrapper>
-      <Footer />
     </>
   );
 };

@@ -17,12 +17,14 @@ const Navigation = () => {
 
   return (
     <Wrapper>
-      <AnchorLink tabIndex='0' to='/#hero' onAnchorLinkClick={() => setOpen(false)}>
+      <AnchorLink tabIndex='0' to='/#strona-glowna' onAnchorLinkClick={() => setOpen(false)}>
         <LogoContainer isSmall>
           <StaticImage
             src='../../assets/images/femi-vital-logo.png'
             alt='Logo. Przejdź do strony głównej'
             objectFit
+            placeholder='blurred'
+            loading='eager'
           />
         </LogoContainer>
       </AnchorLink>
@@ -30,13 +32,14 @@ const Navigation = () => {
         isOpen={open}
         onClick={() => setOpen(!open)}
         alt='Przycisk. Otwórz menu z nawigacją'
+        aria-label='Otwórz menu z nawigacją'
       >
         <div />
         <div />
         <div />
       </StyledBurger>
       <StyledMenu isOpen={open}>
-        <AnchorLink tabIndex='0' to='/#hero' onAnchorLinkClick={() => setOpen(false)}>
+        <AnchorLink tabIndex='0' to='/#strona-glowna' onAnchorLinkClick={() => setOpen(false)}>
           <LogoContainer>
             <StaticImage
               src='../../assets/images/femi-vital-logo.png'
@@ -50,27 +53,31 @@ const Navigation = () => {
         <StyledNavigation>
           <ul>
             <li>
-              <StyledGatsbyLink to='/#service' onAnchorLinkClick={() => setOpen(false)}>
+              <StyledGatsbyLink to='/#oferta' onAnchorLinkClick={() => setOpen(false)}>
                 Oferta
               </StyledGatsbyLink>
             </li>
             <li>
-              <StyledGatsbyLink to='/#team' onAnchorLinkClick={() => setOpen(false)}>
+              <StyledGatsbyLink to='/#zespol' onAnchorLinkClick={() => setOpen(false)}>
                 Zespół
               </StyledGatsbyLink>
             </li>
             <li>
-              <StyledGatsbyLink to='/#prices' onAnchorLinkClick={() => setOpen(false)}>
+              <StyledGatsbyLink to='/#cennik' onAnchorLinkClick={() => setOpen(false)}>
                 Cennik
               </StyledGatsbyLink>
             </li>
             <li>
-              <StyledGatsbyLink to='/#contact' onAnchorLinkClick={() => setOpen(false)}>
+              <StyledGatsbyLink to='/#kontakt' onAnchorLinkClick={() => setOpen(false)}>
                 Kontakt
               </StyledGatsbyLink>
             </li>
           </ul>
-          <StyledLink href='/' target='_blank' rel='noopener noreferrer'>
+          <StyledLink
+            href='https://zarejestrowani.pl/p/QYlK8XPlFXpC0rCryOb93A/?fbclid=IwAR0UTNC85gvBDCbYtuOSBpQf8L70GVr0Zb_lAGz1hZQl4O_-0eNqXLDskDk'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             Umów online
           </StyledLink>
         </StyledNavigation>

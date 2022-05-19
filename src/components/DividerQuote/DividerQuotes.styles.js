@@ -51,6 +51,8 @@ export const AvatarContainer = styled.div`
   width: 54px;
   height: 54px;
   margin-right: 16px;
+  border-radius: ${({ theme }) => theme.radius};
+  overflow: hidden;
 
   ${({ theme }) => theme.mq.desktop} {
     width: 64px;
