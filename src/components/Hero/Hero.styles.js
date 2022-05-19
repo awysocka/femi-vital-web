@@ -15,6 +15,7 @@ export const RoundBackground = styled.div`
   width: 100%;
   height: 65vh;
   overflow: hidden;
+  z-index: -1;
 
   &:before {
     content: '';

@@ -2,6 +2,7 @@ import * as React from 'react';
 import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import Seo from '../components/Seo';
 import { PageWrapper } from '../assets/styles/PageStyles.styles';
 import {
   Wrapper,
@@ -16,6 +17,7 @@ const TeamMember = ({ data }) => {
 
   return (
     <PageWrapper>
+      <Seo title={`${data.mdx.frontmatter.title}`} description={data.mdx.frontmatter.description} />
       <Wrapper>
         <ImageContainer>
           <GatsbyImage image={image} alt='zdjęcie twarzy kobiecej' loading='eager' objectFit />
@@ -41,6 +43,7 @@ export const query = graphql`
   query ($id: String) {
     mdx(id: { eq: $id }) {
       frontmatter {
+        description
         title
         featuredImage {
           childImageSharp {

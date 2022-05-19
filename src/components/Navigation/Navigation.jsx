@@ -17,7 +17,7 @@ const Navigation = () => {
 
   return (
     <Wrapper>
-      <AnchorLink tabIndex='0' to='/#hero' onAnchorLinkClick={() => setOpen(false)}>
+      <AnchorLink tabIndex='0' to='/#strona-glowna' onAnchorLinkClick={() => setOpen(false)}>
         <LogoContainer isSmall>
           <StaticImage
             src='../../assets/images/femi-vital-logo.png'
@@ -39,7 +39,7 @@ const Navigation = () => {
         <div />
       </StyledBurger>
       <StyledMenu isOpen={open}>
-        <AnchorLink tabIndex='0' to='/#hero' onAnchorLinkClick={() => setOpen(false)}>
+        <AnchorLink tabIndex='0' to='/#strona-glowna' onAnchorLinkClick={() => setOpen(false)}>
           <LogoContainer>
             <StaticImage
               src='../../assets/images/femi-vital-logo.png'
@@ -53,22 +53,22 @@ const Navigation = () => {
         <StyledNavigation>
           <ul>
             <li>
-              <StyledGatsbyLink to='/#service' onAnchorLinkClick={() => setOpen(false)}>
+              <StyledGatsbyLink to='/#oferta' onAnchorLinkClick={() => setOpen(false)}>
                 Oferta
               </StyledGatsbyLink>
             </li>
             <li>
-              <StyledGatsbyLink to='/#team' onAnchorLinkClick={() => setOpen(false)}>
+              <StyledGatsbyLink to='/#zespol' onAnchorLinkClick={() => setOpen(false)}>
                 Zespół
               </StyledGatsbyLink>
             </li>
             <li>
-              <StyledGatsbyLink to='/#prices' onAnchorLinkClick={() => setOpen(false)}>
+              <StyledGatsbyLink to='/#cennik' onAnchorLinkClick={() => setOpen(false)}>
                 Cennik
               </StyledGatsbyLink>
             </li>
             <li>
-              <StyledGatsbyLink to='/#contact' onAnchorLinkClick={() => setOpen(false)}>
+              <StyledGatsbyLink to='/#kontakt' onAnchorLinkClick={() => setOpen(false)}>
                 Kontakt
               </StyledGatsbyLink>
             </li>

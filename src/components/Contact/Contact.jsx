@@ -4,7 +4,7 @@ import { Wrapper, Map, IconContainer, ContactList } from './Contact.style';
 
 const Contact = () => {
   return (
-    <Wrapper id='contact'>
+    <Wrapper id='kontakt'>
       <div>
         <h2>Kontakt</h2>
         <ContactList>

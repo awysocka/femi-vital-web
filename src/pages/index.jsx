@@ -1,4 +1,5 @@
 import * as React from 'react';
+import Seo from '../components/Seo';
 import Hero from '../components/Hero/Hero';
 import DividerQuote from '../components/DividerQuote/DividerQuote';
 import AboutUs from '../components/AboutUs/AboutUs';
@@ -15,6 +16,7 @@ import Service from '../components/Service/Service';
 const IndexPage = () => {
   return (
     <>
+      <Seo title='Fizjoterapia dla kobiet' />
       <Hero />
       <PageWrapper>
         <DividerQuote />

@@ -14,7 +14,7 @@ const DividerQuote = () => {
         <AvatarContainer>
           <StaticImage
             src='../../assets/images/photo-2-avatar.jpg'
-            alt='zdjęcie uśmiechniętej blondynki, właścicielka fami-vital, '
+            alt='zdjęcie Iwony Mazur-Ważny, właścicielka fami-vital, '
             objectFit
             placeholder='blurred'
           />

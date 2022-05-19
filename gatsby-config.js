@@ -1,13 +1,22 @@
 module.exports = {
   siteMetadata: {
-    title: `Femi Vital`,
-    siteUrl: `https://www.yourdomain.tld`,
+    title: `Femi-Vital Fizjoterapia Uroginekologiczna`,
+    siteUrl: `http://localhost:8000`,
+    description:
+      'Fizjoterapia uroginekologiczna na Górnym Śląsku. Profesjonalna opieka w czasie ciąży i po porodzie, mobilizacja blizn, terapia schorzeń dna miednicy.',
+    keywords: ['uroginekolog', 'czeladź', 'Iwona Mazur-Ważny uroginekolog'],
+    image: {
+      src: '/static/2b3ae4672b37edb9456a764d8a832526/14b42/meta-image.jpg',
+      height: '630px',
+      width: '1200px',
+    },
   },
   plugins: [
     `gatsby-plugin-styled-components`,
     'gatsby-plugin-image',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
+    'gatsby-plugin-robots-txt',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -41,15 +50,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`montserrat\:300,400,500`, `cormorant\:400,400i,600,600i`],
+        fonts: [`montserrat\:400,500,600`, `cormorant\:400,400i,500,500i`],
         display: 'swap',
       },
     },
     {
-      resolve: "gatsby-plugin-anchor-links",
+      resolve: 'gatsby-plugin-anchor-links',
       options: {
-        offset: -110
-      }
+        offset: -110,
+      },
     },
   ],
 };
