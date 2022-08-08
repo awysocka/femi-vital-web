@@ -37,26 +37,13 @@ const TeamSection = () => {
           </li>
           <li>
             <StaticImage
-              src='../../assets/images/photo-5-dominika.jpg'
-              alt='zdjęcie kobiety, Dominika Terka'
-              placeholder='blurred'
-            />
-            <h3>Dominika Terka</h3>
-            <p>Fizjoterapeutka</p>
-            <StyledGatsbyLink to='/dominika-terka'>
-              <span>więcej</span>
-              <StyledIcon />
-            </StyledGatsbyLink>
-          </li>
-          <li>
-            <StaticImage
               src='../../assets/images/photo-4-agata.jpg'
-              alt='zdjęcie kobiety, Agata Rozwadowska'
+              alt='zdjęcie kobiety, Agata Jung'
               placeholder='blurred'
             />
-            <h3>Agata Rozwadowska</h3>
+            <h3>Agata Jung</h3>
             <p>Fizjoterapeutka</p>
-            <StyledGatsbyLink to='/agata-rozwadowska'>
+            <StyledGatsbyLink to='/agata-jung'>
               <span>więcej</span>
               <StyledIcon />
             </StyledGatsbyLink>

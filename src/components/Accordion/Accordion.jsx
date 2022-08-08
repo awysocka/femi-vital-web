@@ -95,34 +95,32 @@ const FaqAccordion = () => {
       <StyledAccordionItem key='1'>
         <AccordionItemHeading>
           <StyledAccordionItemButton>
-            <h3>Kiedy powinnaś udać się na wizytę do fizjoterapeuty uroginekologicznego?</h3>
+            <h3>Kiedy warto udać się do fizjoterapeuty uroginekologicznego?</h3>
             <FaChevronDown />
           </StyledAccordionItemButton>
         </AccordionItemHeading>
         <StyledAccordionItemPanel>
           <ul>
+            <li>po porodzie, aby sprawdzić stan Twojego brzucha i dna miednicy</li>
+            <li>w ciąży jeżeli chcesz zadbać o ciało i przeciwdziałać ewentualnym bólom</li>
+            <li>jeżeli chcesz przygotować swoje ciało do porodu</li>
             <li>
-              Profilaktycznie - warto sprawdzić, czy wszystko jest ok i dowiedzieć się, co robić,
-              aby taki stan rzeczy trwał jak najdłużej
+              w przypadku problemów z nietrzymaniem moczu lub obniżeniem narządów miednicy mniejszej
             </li>
-            <li>Jeśli planujesz ciążę, jesteś w ciąży (po skończonym I trymestrze)</li>
+            <li>jeżeli chcesz wrócić do pełnej sprawności po porodzie</li>
             <li>
-              Już urodziłaś (po porodzie możesz się spokojnie umówić po wizycie połogowej u
-              ginekologa, jeśli jednak zauważasz jakieś niepokojące objawy, zrób to jak najszybciej)
+              jeżeli masz bliznę po cc lub epizjotomii i chcesz się nimi zaopiekować terapeutycznie
             </li>
-            <li>
-              Jeśli Twoja ciąża zakończyła się CC i wizyta będzie dotyczyć blizny, zaczekaj, aż szwy
-              będą wyciągnięte, nie będzie strupków itd.
-            </li>
-            <li>Jeśli borykasz się z jakimiś dolegliwościami w obrębie dna miednicy</li>
-            <li>Jeśli wchodzisz w okres menopauzy</li>
+            <li>jeżeli podejrzewasz rozejście mięśnia prostego brzucha</li>
+            <li>po zabiegach chirurgicznych w obrębie brzucha i miednicy mniejszej</li>
+            <li>jeżeli cierpisz z powodu bolesnych miesiączek czy bolesnego seksu</li>
           </ul>
         </StyledAccordionItemPanel>
       </StyledAccordionItem>
       <StyledAccordionItem key='2'>
         <AccordionItemHeading>
           <StyledAccordionItemButton>
-            <h3>Co powinnam zabrać ze sobą?</h3>
+            <h3>Co powinnaś zabrać ze sobą?</h3>
             <FaChevronDown />
           </StyledAccordionItemButton>
         </AccordionItemHeading>
@@ -130,6 +128,23 @@ const FaqAccordion = () => {
           <p>
             Najlepiej zabierz ze sobą: strój sportowy, wypis ze szpitala, książeczkę ciąży, badania
             dodatkowe i inną dokumentację medyczną.
+          </p>
+        </StyledAccordionItemPanel>
+      </StyledAccordionItem>
+      <StyledAccordionItem key='3'>
+        <AccordionItemHeading>
+          <StyledAccordionItemButton>
+            <h3>Jak wygląda pierwsza wizyta?</h3>
+            <FaChevronDown />
+          </StyledAccordionItemButton>
+        </AccordionItemHeading>
+        <StyledAccordionItemPanel>
+          <p>
+            Na pierwszej wizycie odbędzie się dokładny wywiad i badanie podmiotowe z wykorzystaniem
+            badania USG. Z pewnością odbędzie się badanie uroginekologiczne per vaginum w celu oceny
+            mięśni dna miednicy i struktur miednicy mniejszej. Odbywa się ono w pełnym komforcie dla
+            Pacjentki, w atmosferze spokoju i szacunku dla jej prywatności (dostępne są
+            spódniczki ginekologiczne i intymne miejsce do przebrania).
           </p>
         </StyledAccordionItemPanel>
       </StyledAccordionItem>
