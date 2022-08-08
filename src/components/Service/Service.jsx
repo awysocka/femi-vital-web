@@ -1,7 +1,14 @@
 import React from 'react';
 import { MdPregnantWoman, MdWavingHand } from 'react-icons/md';
 import { GiPelvisBone } from 'react-icons/gi';
-import { FaHands, FaVenusMars, FaHandHoldingMedical } from 'react-icons/fa';
+import {
+  FaHands,
+  FaHeart,
+  FaHandHoldingMedical,
+  FaBaby,
+  FaDesktop,
+  FaWalking,
+} from 'react-icons/fa';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -50,7 +57,7 @@ const ServiceList = styled.ul`
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: flex-start;
 
     h3 {
       margin: 0;
@@ -69,7 +76,7 @@ const ServiceList = styled.ul`
       width: 50px;
       height: 50px;
       color: ${({ theme }) => theme.color.darkBlue};
-      margin-bottom: 20px;
+      margin-bottom: 24px;
     }
   }
 `;
@@ -80,8 +87,12 @@ const Service = () => {
       <h2>W czym możemy Ci pomóc?</h2>
       <ServiceList>
         <li>
-          <MdPregnantWoman />
+          <FaBaby />
           <h3>Fizjoterapia w czasie ciąży i&nbsp;po&nbsp;porodzie</h3>
+        </li>
+        <li>
+          <MdPregnantWoman />
+          <h3>Przygotowanie do porodu naturalnego i cięcia cesarskiego</h3>
         </li>
         <li>
           <GiPelvisBone />
@@ -103,8 +114,16 @@ const Service = () => {
           <h3>Fizjoterapia po operacjach uroginekologicznych</h3>
         </li>
         <li>
-          <FaVenusMars />
+          <FaHeart />
           <h3>Problemy bólowe, ból podczas współżycia</h3>
+        </li>
+        <li>
+          <FaDesktop />
+          <h3>Badanie USG powłok brzusznych</h3>
+        </li>
+        <li>
+          <FaWalking />
+          <h3>Bóle kręgosłupa i stawów obwodowych</h3>
         </li>
       </ServiceList>
     </Wrapper>

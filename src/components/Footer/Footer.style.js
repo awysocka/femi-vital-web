@@ -26,16 +26,16 @@ export const RoundBackground = styled.div`
   min-height: 250px;
   max-height: 800px;
   width: 100%;
-  height: 36vh;
+  height: 36vw;
   overflow: hidden;
   z-index: -2;
 
   ${({ theme }) => theme.mq.desktop} {
-    height: 35vh;
+    height: 28vw;
   }
 
   ${({ theme }) => theme.mq.bigDesktop} {
-    height: 35vh;
+    height: 20vw;
   }
 
   &:before {

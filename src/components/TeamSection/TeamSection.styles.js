@@ -29,7 +29,7 @@ export const Wrapper = styled.div`
 
 export const TeamList = styled.ul`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(max(260px, calc(100% - 80px) / 3), 1fr));
   grid-gap: 40px;
 
   li {
@@ -40,8 +40,8 @@ export const TeamList = styled.ul`
 
   img {
     width: 100%;
-    max-width: 400px;
-    margin: 0 autu;
+    /* max-width: 400px; */
+    margin: 0 auto;
     border-radius: ${({ theme }) => theme.radius};
     overflow: hidden;
   }

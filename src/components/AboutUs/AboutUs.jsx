@@ -8,16 +8,21 @@ const AboutUs = () => {
       <div>
         <h2>Nasza misja </h2>
         <p>
-          Zapraszamy do gabinetu zlokalizowanego na Górnym Śląsku, który specjalizuje się w
-          fizjoterapii uroginekologicznej. Wychodząc naprzeciw potrzebom Kobiet pracujemy z ich
-          dolegliwościami w sferze uroginekologicznej. Fizjoterapia uroginekologiczna proponuje
-          terapię dysfunkcji i dolegliwości na każdym etapie życia Kobiety.
+          Zapraszamy do gabinetu zlokalizowanego na Górnym&nbsp;Śląsku, który specjalizuje się w
+          fizjoterapii kobiecej. Na co dzień współpracujemy z Kobietami z&nbsp;problemami w sferze
+          urologinekologicznej.
+        </p>
+        <p>
+          Wychodząc naprzeciw potrzebom Kobiet zapraszamy w&nbsp;czasie ciąży. Celem wizyt jest
+          utrzymanie ciała w&nbsp;dobrej formie, przeciwdziałanie dolegliwościom bólowym, a także
+          przygotowanie do porodu naturalnego czy cesarskiego cięcia. Nasza uwaga jest również
+          skoncentrowana na Kobiety po porodzie, szanując fizjologię połogu i regenerację celem
+          dojścia do pełnej sprawności
         </p>
         <p>
           Fizjoterapia uroginekologiczna to nie tylko przeciwdziałanie powstałym już dysfunkcjom, to
-          także szeroko pojęta profilaktyka. Dbamy o ciało i zdrowie Kobiety, aby do dysfunkcji
-          uroginekologicznych nie doszło. Proponujemy szereg działań dla poprawy świadomości ciała i
-          jakości jego działania.
+          także szeroko pojęta profilatyka. Dbamy o ciało i zdrowie Kobiety, proponując szereg
+          działań dla poprawy świadomości ciała i jakości jego działania.
         </p>
       </div>
       <ImageContainer>
