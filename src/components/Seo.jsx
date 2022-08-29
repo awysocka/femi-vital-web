@@ -71,6 +71,10 @@ function Seo({ description, lang, meta, image: metaImage, title }) {
           metaImage
             ? [
                 {
+                  property: 'og:image:secure_url',
+                  content: image,
+                },
+                {
                   property: 'og:image',
                   content: image,
                 },
