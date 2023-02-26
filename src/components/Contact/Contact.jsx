@@ -1,9 +1,10 @@
 import React from 'react';
 import { FaPhone, FaMapPin, FaClock } from 'react-icons/fa';
-import { Wrapper, Map, IconContainer, ContactList } from './Contact.style';
+import { Wrapper, Map, IconContainer, ContactList, TemporaryBanner } from './Contact.style';
 
 const Contact = () => {
   return (
+    <>
     <Wrapper id='kontakt'>
       <div>
         <h2>Kontakt</h2>
@@ -50,6 +51,8 @@ const Contact = () => {
         ></Map>
       </div>
     </Wrapper>
+    <TemporaryBanner>Uwaga! Od marca nowy adres: Kolonia Pekin 5a/2, 41-203 Sosnowiec</TemporaryBanner>
+    </>
   );
 };
 

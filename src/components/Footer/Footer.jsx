@@ -23,7 +23,7 @@ const Footer = () => {
         </LogoContainer>
         <SocialMediaContainer>
           <a
-            href='https://www.facebook.com/Femi-Vital-Fizjoterapia-Uroginekologiczna-105892008325599'
+            href='https://www.facebook.com/profile.php?id=100067599881010'
             target='_blank'
             rel='noopener noreferrer'
             alt='Ikona facebooka. Przejdź na fanpage firmy na facebooku'
@@ -32,7 +32,7 @@ const Footer = () => {
             <FaFacebook />
           </a>
           <a
-            href='https://www.instagram.com/femi.vital.fizjo.urogin/'
+            href='https://www.instagram.com/femi_vital_fizjo_kobieca/'
             target='_blank'
             rel='noopener noreferrer'
             alt='Ikona instagrama. Przejdź na konto firmy na instagramie'
