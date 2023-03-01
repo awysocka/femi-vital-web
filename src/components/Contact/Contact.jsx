@@ -1,10 +1,9 @@
 import React from 'react';
 import { FaPhone, FaMapPin, FaClock } from 'react-icons/fa';
-import { Wrapper, Map, IconContainer, ContactList, TemporaryBanner } from './Contact.style';
+import { Wrapper, Map, IconContainer, ContactList } from './Contact.style';
 
 const Contact = () => {
   return (
-    <>
     <Wrapper id='kontakt'>
       <div>
         <h2>Kontakt</h2>
@@ -24,7 +23,7 @@ const Contact = () => {
             </IconContainer>
             <div>
               <p>Adres</p>
-              <p>ul. Bytomska 2, 41-250 Czeladź</p>
+              <p>Kolonia Pekin 5a/2, 41-203 Sosnowie</p>
             </div>
           </li>
           <li>
@@ -44,15 +43,13 @@ const Contact = () => {
       <div>
         <Map
           title='maps'
-          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2547.5599322857765!2d19.0732621!3d50.318804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716d10163604a79%3A0xd8585c593e160bd4!2sBytomska%202%2C%2041-250%20Czelad%C5%BA!5e0!3m2!1spl!2spl!4v1651672226793!5m2!1spl!2spl'
+          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.178199886313!2d19.072758515725535!3d50.28860137945336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716d039c77b8593%3A0x90eabd5d18696c57!2sKolonia%20Pekin%205a%2C%2041-203%20Sosnowiec!5e0!3m2!1spl!2spl!4v1677702110471!5m2!1spl!2spl'
           allowFullScreen=''
           loading='lazy'
           referrerPolicy='no-referrer-when-downgrade'
         ></Map>
       </div>
     </Wrapper>
-    <TemporaryBanner>Uwaga! Od marca nowy adres: Kolonia Pekin 5a/2, 41-203 Sosnowiec</TemporaryBanner>
-    </>
   );
 };
 

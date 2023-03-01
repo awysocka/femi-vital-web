@@ -100,12 +100,3 @@ export const ContactList = styled.ul`
     }
   }
 `;
-
-export const TemporaryBanner = styled.div`
-  width: 100%;
-  padding: 15px 10px;
-  background-color: ${({ theme }) => theme.color.lightPink};
-  color: ${({ theme }) => theme.color.darkBlue};
-  font-family: ${({ theme }) => theme.fontFamily.montserrat};
-  border-radius: ${({ theme }) => theme.radius};
-`

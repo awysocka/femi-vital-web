@@ -21,6 +21,7 @@ const Navigation = () => {
         <LogoContainer isSmall>
           <StaticImage
             src='../../assets/images/femi-vital-logo.png'
+            // src='../../assets/images/femivital-logo.svg'
             alt='Logo. Przejdź do strony głównej'
             objectFit
             placeholder='blurred'
@@ -42,7 +43,8 @@ const Navigation = () => {
         <AnchorLink tabIndex='0' to='/#strona-glowna' onAnchorLinkClick={() => setOpen(false)}>
           <LogoContainer>
             <StaticImage
-              src='../../assets/images/femi-vital-logo.png'
+              // src='../../assets/images/femi-vital-logo.png'
+              src='../../assets/images/femivital-logo.svg'
               alt='Logo. Przejdź do strony głównej'
               objectFit
               loading='eager'

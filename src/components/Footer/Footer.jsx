@@ -15,7 +15,8 @@ const Footer = () => {
       <Content>
         <LogoContainer>
           <StaticImage
-            src='../../assets/images/femi-vital-logo.png'
+            // src='../../assets/images/femi-vital-logo.png'
+            src='../../assets/images/femivital-logo.svg'
             alt='Logo firmy'
             objectFit
             placeholder='blurred'
