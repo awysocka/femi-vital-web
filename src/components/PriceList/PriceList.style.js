@@ -61,3 +61,9 @@ export const StyledTable = styled.table`
     }
   }
 `;
+
+export const Note = styled.p`
+  font-size: ${({ theme }) => theme.fontSize.note};
+  color: ${({ theme }) => theme.color.darkGrey};
+  font-family: ${({ theme }) => theme.fontFamily.montserrat};
+`

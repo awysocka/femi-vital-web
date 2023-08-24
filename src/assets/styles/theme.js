@@ -23,6 +23,7 @@ export const theme = {
     body: '1.6rem',
     caption: '1.8rem',
     mobileNav: '2.2rem',
+    note: '1.2rem',
   },
   fontFamily: {
     montserrat: '"Montserrat", sans-serif',
