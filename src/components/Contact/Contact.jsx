@@ -23,7 +23,7 @@ const Contact = () => {
             </IconContainer>
             <div>
               <p>Adres</p>
-              <p>Kolonia Pekin 5a/2, 41-203 Sosnowie</p>
+              <p>Kolonia Pekin 5a/2, 41-203 Sosnowiec</p>
             </div>
           </li>
           <li>
