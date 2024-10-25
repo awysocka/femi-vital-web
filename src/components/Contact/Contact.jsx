@@ -23,7 +23,8 @@ const Contact = () => {
             </IconContainer>
             <div>
               <p>Adres</p>
-              <p>Kolonia Pekin 5a/2, 41-203 Sosnowiec</p>
+              <p>Centrum Medyczne Małobądzka</p>
+              <p>Małobądzka 34, 42-500 Będzin</p>
             </div>
           </li>
           <li>

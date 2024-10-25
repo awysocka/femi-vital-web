@@ -8,7 +8,7 @@ const Hero = () => {
       <Content>
         <h1>Twoje dobre samopoczucie jest naszym priorytetem.</h1>
         <p>
-          Zapraszamy do Femi-Vital Fizjoterapia Uroginekologiczna. Z troską zadbamy o Twoje ciało i
+          Zapraszamy do Femi-Vital Fizjoterapia Kobieca. <br/> Z troską zadbamy o Twoje ciało i
           zdrowie.
         </p>
         <HeroImageContainer>

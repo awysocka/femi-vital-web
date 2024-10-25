@@ -55,6 +55,11 @@ const Navigation = () => {
         <StyledNavigation>
           <ul>
             <li>
+              <StyledGatsbyLink to='/indiba' onAnchorLinkClick={() => setOpen(false)}>
+                INDIBA
+              </StyledGatsbyLink>
+            </li>
+            <li>
               <StyledGatsbyLink to='/#oferta' onAnchorLinkClick={() => setOpen(false)}>
                 Oferta
               </StyledGatsbyLink>
@@ -76,7 +81,7 @@ const Navigation = () => {
             </li>
           </ul>
           <StyledLink
-            href='https://zarejestrowani.pl/p/QYlK8XPlFXpC0rCryOb93A/?fbclid=IwAR0UTNC85gvBDCbYtuOSBpQf8L70GVr0Zb_lAGz1hZQl4O_-0eNqXLDskDk'
+            href='https://femivitalfizjoterapiakobieca.booksy.com'
             target='_blank'
             rel='noopener noreferrer'
           >

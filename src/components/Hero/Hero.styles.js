@@ -75,7 +75,7 @@ export const Content = styled.div`
     font-size: ${({ theme }) => theme.fontSize.body};
     color: ${({ theme }) => theme.color.darkGrey};
     font-family: ${({ theme }) => theme.fontFamily.montserrat};
-    max-width: 470px;
+    max-width: 440px;
     line-height: 1.6;
     margin: 0;
     margin-bottom: 41px;

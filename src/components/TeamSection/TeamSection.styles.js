@@ -4,7 +4,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import { Link } from 'gatsby';
 
 export const Wrapper = styled.div`
-  background-color: ${({ theme }) => theme.color.lightGrey};
+  /* background-color: ${({ theme }) => theme.color.lightGrey}; */
   padding: 40px 0;
 
   ${({ theme }) => theme.mq.desktop} {
@@ -29,6 +29,7 @@ export const Wrapper = styled.div`
 
 export const TeamList = styled.ul`
   display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   grid-template-columns: repeat(auto-fill, minmax(max(260px, calc(100% - 80px) / 3), 1fr));
   grid-gap: 40px;
 
@@ -40,7 +41,6 @@ export const TeamList = styled.ul`
 
   img {
     width: 100%;
-    /* max-width: 400px; */
     margin: 0 auto;
     border-radius: ${({ theme }) => theme.radius};
     overflow: hidden;

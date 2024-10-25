@@ -16,16 +16,16 @@ import Service from '../components/Service/Service';
 const IndexPage = () => {
   return (
     <>
-      <Seo title='Fizjoterapia dla kobiet' />
+      <Seo title='Femi-Vital' />
       <Hero />
       <PageWrapper>
         <DividerQuote />
+        <Service />
+      </PageWrapper>
+      <PageWrapper>
         <AboutUs />
       </PageWrapper>
       <AdvantagesSection />
-      <PageWrapper>
-        <Service />
-      </PageWrapper>
       <TeamSection />
       <DividerContact />
       <Testimonials />
