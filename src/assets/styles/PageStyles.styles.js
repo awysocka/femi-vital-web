@@ -9,3 +9,4 @@ export const PageWrapper = styled.div`
     padding: 0 60px;
   }
 `;
+

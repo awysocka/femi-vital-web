@@ -26,7 +26,10 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.2;
   }
 
-  p {line-height: 1.6}
+  p {
+    line-height: 1.6;
+    font-family: "Montserrat", sans-serif;
+  }
 
   ul {
   list-style-type: none;

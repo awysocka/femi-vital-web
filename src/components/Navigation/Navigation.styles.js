@@ -15,7 +15,7 @@ export const Wrapper = styled.div`
   background-color: ${({ theme }) => theme.color.lightBlue};
 
   ${({ theme }) => theme.mq.desktop} {
-    padding: 20px 60px;
+    padding: 10px 60px;
   }
 `;
 

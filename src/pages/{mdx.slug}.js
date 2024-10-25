@@ -26,7 +26,7 @@ const TeamMember = ({ data }) => {
           <h1>{data.mdx.frontmatter.title}</h1>
           <MDXRenderer>{data.mdx.body}</MDXRenderer>
           <StyledLink
-            href='https://zarejestrowani.pl/p/QYlK8XPlFXpC0rCryOb93A/?fbclid=IwAR0UTNC85gvBDCbYtuOSBpQf8L70GVr0Zb_lAGz1hZQl4O_-0eNqXLDskDk'
+            href='https://femivitalfizjoterapiakobieca.booksy.com'
             target='_blank'
             rel='noopener noreferrer'
           >

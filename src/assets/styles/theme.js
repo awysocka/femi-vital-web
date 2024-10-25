@@ -13,6 +13,7 @@ export const theme = {
     darkGrey: '#424B4C',
   },
   fontSize: {
+    headingBig: '8.6rem',
     headingPrimary: '7.2rem',
     headingPrimaryMobile: '4.5rem',
     headingSecondary: '5rem',
@@ -33,7 +34,7 @@ export const theme = {
     tablet: '@media (min-width: 768px)',
     desktop: '@media (min-width: 1024px)',
     bigDesktop: '@media (min-width: 1440px)',
-    huge: '@media(min-width: 1440px)',
+    huge: '@media(min-width: 1920px)',
     hover: '@media (hover: hover)', 
   },
 };

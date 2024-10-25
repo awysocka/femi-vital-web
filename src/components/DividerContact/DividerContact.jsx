@@ -12,7 +12,7 @@ const DividerContact = () => {
             isLight
             target='_blank'
             rel='noopener noreferrer'
-            href='https://zarejestrowani.pl/p/QYlK8XPlFXpC0rCryOb93A/?fbclid=IwAR0UTNC85gvBDCbYtuOSBpQf8L70GVr0Zb_lAGz1hZQl4O_-0eNqXLDskDk'
+            href='https://femivitalfizjoterapiakobieca.booksy.com'
           >
             Umów online
           </StyledLink>
