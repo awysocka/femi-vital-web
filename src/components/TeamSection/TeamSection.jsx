@@ -48,6 +48,19 @@ const TeamSection = () => {
               <StyledIcon />
             </StyledGatsbyLink>
           </li>
+          <li>
+            <StaticImage
+              src='../../assets/images/photo-9-magda.jpg'
+              alt='zdjęcie kobiety, Magdalena Sornowska'
+              placeholder='blurred'
+            />
+            <h3>Magdalena Sornowska</h3>
+            <p>Fizjoterapeutka</p>
+            <StyledGatsbyLink to='/magdalena-sornowska'>
+              <span>więcej</span>
+              <StyledIcon />
+            </StyledGatsbyLink>
+          </li>
         </TeamList>
       </PageWrapper>
     </Wrapper>

@@ -44,7 +44,7 @@ const Contact = () => {
       <div>
         <Map
           title='maps'
-          src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2549.178199886313!2d19.072758515725535!3d50.28860137945336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716d039c77b8593%3A0x90eabd5d18696c57!2sKolonia%20Pekin%205a%2C%2041-203%20Sosnowiec!5e0!3m2!1spl!2spl!4v1677702110471!5m2!1spl!2spl'
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2547.6426026874806!2d19.123344376573545!3d50.31726139694471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4716d09a9bd22231%3A0x59db1958f32180fe!2zTWHFgm9ixIVkemthIDM0LCA0Mi01MDAgQsSZZHppbg!5e0!3m2!1spl!2spl!4v1765394438786!5m2!1spl!2spl" 
           allowFullScreen=''
           loading='lazy'
           referrerPolicy='no-referrer-when-downgrade'
