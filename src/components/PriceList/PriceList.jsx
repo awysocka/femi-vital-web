@@ -10,12 +10,12 @@ const PriceList = () => {
           <tr>
             <td>Fizjoterapia uroginekologiczna z wykorzystaniem USG</td>
             <td>55 minut</td>
-            <td>200zł</td>
+            <td>220zł</td>
           </tr>
           <tr>
             <td>Fizjoterapia uroginekologiczna z wykorzystaniem USG - Iwona Mazur-Ważny</td>
             <td>55 minut</td>
-            <td>220zł</td>
+            <td>240zł</td>
           </tr>
           <tr>
             <td>
@@ -23,11 +23,11 @@ const PriceList = () => {
               gabinecie)
             </td>
             <td>55 minut</td>
-            <td>240zł</td>
+            <td>260zł</td>
           </tr>
         </tbody>
       </StyledTable>
-      <Note>* obowiązuje od 1.11.2024</Note>
+      <Note>* obowiązuje od 1.01.2026</Note>
     </Wrapper>
   );
 };
